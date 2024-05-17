@@ -18,13 +18,13 @@ int main(void)
     while (1) 
     {
 		PORTA = 0b00000111;
-		_delay_ms(35);
+		_delay_ms(25);
 		PORTA = 0b00001011;
-		_delay_ms(35);
+		_delay_ms(25);
 		PORTA = 0b00001101;
-		_delay_ms(35);
+		_delay_ms(25);
 		PORTA = 0b00001110;
-		_delay_ms(35);
+		_delay_ms(25);
     }
 }
 
