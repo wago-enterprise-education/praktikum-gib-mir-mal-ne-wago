@@ -42,3 +42,4 @@ Die aktuelle Version der Firmware befindet sich im Verzeichnis `firmware_v1.0` a
 - Padgröße DIL 2mm/1.5mm // Loch 1mm
 - Padgröße picoMAX 2.2mm/2.2mm // Loch 1.2mm
 - Textool Sockel für Programmierversion sollte möglich sein
+- Zweite Platine mit 3mm Bohrungen als Schablone für die LEDs?
