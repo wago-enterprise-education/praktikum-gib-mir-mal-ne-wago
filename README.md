@@ -24,22 +24,22 @@ Die aktuelle Version der Firmware befindet sich im Verzeichnis `firmware_v1.0` a
 - [Includes (e.g. util/delay.h)](https://onlinedocs.microchip.com/pr/GUID-317042D4-BCCE-4065-BB05-AC4312DBC2C4-en-US-2/index.html?GUID-4E858AD6-A765-4972-84FE-CD55FC481B2F)
 - [Delay example](https://electronics.stackexchange.com/questions/660389/delay-h-on-attiny45-vs-attiny461-in-microchip-studio)
 - Die jetzige Version hat den Reset fehlerhaft auf GND, so dass der Controller sich in andauerndem Reset befindet. Daher muss auf dem Controller die DSBLRST Fuse gesetzt werden. Danach lässt der Controller sich nicht erneut programmieren, es sei denn es wird in high-voltage [ATTiny Fuse Reset](https://sites.google.com/site/wayneholder/attiny-fuse-reset) durchgeführt
-
+- [UPDI High Voltage](https://developerhelp.microchip.com/xwiki/bin/view/software-tools/programmers-and-debuggers/avr-updi-info/)
 
 ## Anpassungen für die nächste Version
 
 - Controller mit UPDI verwenden
-- kleineren Controller verwenden
 - UPDI Interface auf der Platine herausführen
-- Reset pin auf VCC ziehen
+- UPDI Interface und Spannungsversorgung mit einem Anschluss (Batterie oder PC)
+- Reset pin auf VCC ziehen, falls nicht UPDI
+- kleineren Controller verwenden
 - Reset Button vorsehen?
 - MP3 Wiedergabe des Songs
-- UPDI Interface und Spannungsversorgung mit einem Anschluss (Batterie oder PC)
 - Beim Programmieren per USB Kabel (FTDI) auch Spannungsversorgung herstellen
 - USB Interface?
-- Widerstände mit etwas mehr Abstand der Lötpads 10mm statt 7.5mm
+- Widerstände mit etwas mehr Abstand der Lötpads 10mm statt 7.5mm (EasyEDA: R_AXIAL-0.4)
 - Padgröße LED/Widerstand 1.9mm/1.9mm // Loch 0.9mm
 - Padgröße DIL 2mm/1.5mm // Loch 1mm
 - Padgröße picoMAX 2.2mm/2.2mm // Loch 1.2mm
-- Textool Sockel für Programmierversion sollte möglich sein
+- Textool Sockel für Programmierversion sollte möglich sein, falls µC ohne UPDI in DIL
 - Zweite Platine mit 3mm Bohrungen als Schablone für die LEDs?
