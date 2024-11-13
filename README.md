@@ -31,6 +31,7 @@ Die aktuelle Version der Firmware befindet sich im Verzeichnis `firmware_v1.0` a
 - Controller mit UPDI verwenden
 - UPDI Interface auf der Platine herausführen
 - UPDI Interface und Spannungsversorgung mit einem Anschluss (Batterie oder PC)
+- Ggf. Jacdac fähig für Calliope
 - Reset pin auf VCC ziehen, falls nicht UPDI
 - kleineren Controller verwenden
 - Reset Button vorsehen?
