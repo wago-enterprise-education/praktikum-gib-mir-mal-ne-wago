@@ -44,3 +44,9 @@ Die aktuelle Version der Firmware befindet sich im Verzeichnis `firmware_v1.0` a
 - Padgröße picoMAX 2.2mm/2.2mm // Loch 1.2mm
 - Textool Sockel für Programmierversion sollte möglich sein, falls µC ohne UPDI in DIL
 - Zweite Platine mit 3mm Bohrungen als Schablone für die LEDs?
+
+## Sound
+
+- [MP3 Modul](https://www.reichelt.de/de/de/shop/produkt/arduino_-_dfplayer_mini_mp3_wav_microsd-karte-289897)
+- [Kleinlausprecher](https://www.reichelt.de/de/de/shop/produkt/kleinlautsprecher_al-23p_0_1w_8ohm-145879)
+- [SD Karte](https://www.reichelt.de/de/de/shop/produkt/microsdhc-speicherkarte_4gb_intenso_class_10-126585)
