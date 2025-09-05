@@ -4,14 +4,16 @@ title: Praktikum – Gib mir mal ’ne WAGO
 lang: de
 ---
 
-# Praktikum – Gib mir mal ’ne WAGO
+## Inhalt
 
 1. [Sicherheitshinweise](#sicherheitshinweise)
 2. [Bauanleitung](#bauanleitung)
 3. [Upload des Programmcodes](#upload-des-programmcodes)
 4. [Programming Guide](#programming-guide)
 
-Nach dem Einschalten der Platine läuft ein Lauflicht um die Sprechblase. Hör Dir doch gleich mal den Song 🎶 dazu an, den Du über den QR Code auf der Platine findest... 🙂
+Nach dem Bestücken und Einschalten der Platine läuft ein Lauflicht um die Sprechblase. Hör Dir doch gleich mal den Song 🎶 dazu an, den Du über den QR Code auf der Platine findest... 🙂
+
+<img src="gib-mir-mal-ne-wago-3d.jpg" width="500px" alt="Platine in 3D" />
 
 ## Sicherheitshinweise
 
