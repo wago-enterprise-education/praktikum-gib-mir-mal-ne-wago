@@ -16,6 +16,7 @@ Aktualisierung aufzufordern.
 
 ### Added
 
+- MIT LICENSE für öffentliches Repo ergänzt
 - Redfit Adapter für die Programmierung auf Platine aufgenommen (Analog zum [Praktikum - Lichtfolge](https://github.com/wago-enterprise-education/praktikum-lichtfolge))
 - Github Pages Seiten für Anleitung
 
