@@ -14,22 +14,22 @@
 
 ## Anpassungen für die nächste Version
 
-- Controller mit UPDI verwenden
-- UPDI Interface auf der Platine herausführen
-- UPDI Interface und Spannungsversorgung mit einem Anschluss (Batterie oder PC)
-- Ggf. Jacdac fähig für Calliope
-- Reset pin auf VCC ziehen, falls nicht UPDI
-- kleineren Controller verwenden
-- Reset Button vorsehen?
-- MP3 Wiedergabe des Songs
-- Beim Programmieren per USB Kabel (FTDI) auch Spannungsversorgung herstellen
-- USB Interface?
-- Widerstände mit etwas mehr Abstand der Lötpads 10mm statt 7.5mm (EasyEDA: R_AXIAL-0.4)
-- Padgröße LED/Widerstand 1.9mm/1.9mm // Loch 0.9mm
-- Padgröße DIL 2mm/1.5mm // Loch 1mm
-- Padgröße picoMAX 2.2mm/2.2mm // Loch 1.2mm
-- Textool Sockel für Programmierversion sollte möglich sein, falls µC ohne UPDI in DIL
-- Zweite Platine mit 3mm Bohrungen als Schablone für die LEDs?
+- [ ] ~~Controller mit UPDI verwenden~~
+- [ ] ~~UPDI Interface auf der Platine herausführen~~
+- [ ] ~~UPDI Interface und Spannungsversorgung mit einem Anschluss (Batterie oder PC)~~
+- [ ] ~~Ggf. Jacdac fähig für Calliope~~
+- [x] Reset pin auf VCC ziehen, falls nicht UPDI
+- [ ] ~~kleineren Controller verwenden~~
+- [ ] ~~Reset Button vorsehen?~~
+- [ ] ~~MP3 Wiedergabe des Songs~~
+- [ ] Beim Programmieren per USB Kabel (FTDI) auch Spannungsversorgung herstellen
+- [ ] ~~USB Interface?~~
+- [x] Widerstände mit etwas mehr Abstand der Lötpads 10mm statt 7.5mm (EasyEDA: R_AXIAL-0.4)
+- [x] Padgröße LED/Widerstand 1.9mm/1.9mm // Loch 0.9mm
+- [x] Padgröße DIL 2mm/1.5mm // Loch 1mm
+- [x] Padgröße picoMAX 2.2mm/2.2mm // Loch 1.2mm
+- [ ] ~~Textool Sockel für Programmierversion sollte möglich sein, falls µC ohne UPDI in DIL~~
+- [x] Zweite Platine mit 3mm Bohrungen als Schablone für die LEDs -> Fixierung mit 3D Druck
 
 ## Sound
 
