@@ -18,10 +18,12 @@ Aktualisierung aufzufordern.
 
 - MIT LICENSE für öffentliches Repo ergänzt
 - Redfit Adapter für die Programmierung auf Platine aufgenommen (Analog zum [Praktikum - Lichtfolge](https://github.com/wago-enterprise-education/praktikum-lichtfolge))
-- Github Pages Seiten für Anleitung
+- Github Pages Seiten für Anleitung aufgesetzt
+- Anleitung analog zum Praktikum Lichtfolge aufgebaut
 
 ### Changed
 
+- Reset mit Pull-up Widerstand (10kOhm)
 - QR Code für Karriereseite entfernt
 - QR Code für Anleitung auf Github Pages eingefügt
 
