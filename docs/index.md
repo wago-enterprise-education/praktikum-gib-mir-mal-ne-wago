@@ -41,7 +41,7 @@ Anzahl | Artikel
 
 Gelötet wird bei THT-Bauteilen (Through Hole Technology, deutsch Durchsteckmontage) immer auf der Nicht-Bestückungsseite. Also muss die Platine nach dem Einsetzen einmal gedreht werden. Damit die Bauteile dabei nicht herausfallen, werden die Komponenten provisorisch fixiert werden. Hierzu steht Dir eine entsprechende Fixierung zur Verfügung, die wir mit dem 3D Drucker vorbereitet haben.
 
-⚠️ TODO: Bild der Fixierung
+<img src="images/loetschablone.jpg" width="250px" alt="Lötschablone" style="margin: 0 0 0 40px"/>
 
 Da wir bleifreies Lötzinn verwenden, sollte der Lötkolben etwas höher eingestellt werden. **330 bis 360°C** sind ein guter Richtwert. Für Lötstellen, die mit einer großen Kupferfläche verbunden sind, beispielsweise GND-Flächen, können auch 380°C sinnvoll sein. Mit steigender Temperatur sinkt jedoch die aktive Dauer des Flussmittels im Lötzinn deutlich, was wiederum das Löten erschwert. Mehr als 380°C sollten nicht eingestellt werden, da dies die Lebensdauer der Lötspitze stark verringert.
 
@@ -67,7 +67,7 @@ Nun kommen die Leuchtdioden dran. Die Leuchtdioden haben einen etwas längeren A
 
 <img src="images/led.jpg" width="350px" alt="Leuchtdiode" style="margin: 10px 0 20px 40px"/>
 
-Du kannst die Polarität auch nochmal von außen sehen. Der „Teller“ ist „-“ und muss immer zur unteren Kante der Platine ausgerichtet sein.
+Du kannst die Polarität auch nochmal von außen sehen. Der „Teller“ ist „-“ und muss immer **zur unteren Kante der Platine** ausgerichtet sein.
 Genau wie bei den Widerständen hilft es, wenn Du die Anschlussdrähte vorsichtig leicht nach außen biegst. Kürze die Bauteildrähte nach dem einlöten mit einem Seitenschneider vorsichtig oberhalb der Lötverbindung. Kürze immer nur einen Bauteildraht auf einmal!
 
 ### Schritt 4
@@ -76,16 +76,14 @@ Stecke den WAGO picoMAX Steckverbinder und die Stiftleiste zusammen. Löte beide
 
 <img src="images/picomax.jpg" width="150px" alt="WAGO Picomax Steckverbinder" style="margin: 0 0 0 40px"/>
 
-### Schritt 5
-
-Zuletzt musst Du die Batterien in das Batteriepack einlegen. Nutze hierzu einen kleinen Kreuzschraubendreher und öffne das Batteriepack. Achte auf die Richtung der Batterien! Schließe und verschraube das Batteriepack wieder. Die Platine ist nun betriebsbereit.
-
-<img src="images/battery_pack.jpg" width="180px" alt="Batteriepack" style="margin: 10px 0 0 60px"/>
-
 ## Upload des Programmcodes
 
 {:.info}
-**[Programmcode herunterladen ➡️](TODO ...)**
+> Programmcode herunterladen
+>
+> Der Programmcode ist als Arduino `ino` Datei im Github-Repository verfügbar. Am besten Du lädst die `gib_mir_mal_ne_wago.ino` Datei auf Deinen Rechner herunter. (Icon rechts oberhalb des Prohgrammcodes 'Download raw file')
+>
+> [Programmcode herunterladen ➡️](https://github.com/wago-enterprise-education/praktikum-gib-mir-mal-ne-wago/tree/main/firmware)
 
 Die Platine verwendet einen Mikrocontroller aus der [ATtinyx4A ↗️](https://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny24A-44A-84A-DataSheet-DS40002269A.pdf){:target="_blank" rel="noopener"} Reihe. Konkret kommt hier ein **ATtiny24A** zum Einsatz. Die Mikrocontrollerreihe verfügt über einen internen Oszillator für den Prozessortakt und kann über ein sogenanntes ISP-Interface programmiert werden. Der Eingangsspannungsbereich beträgt 1,8 bis 5,5 V.
 
@@ -102,7 +100,7 @@ Für eine schnelle und unkomplizierte Programmierung wurde im WAGO Ausbildungsbe
 ### Kurzanleitung
 
 1. Falls nicht schon geschehen: AurduinoISP Sketch `File > Examples > 11.ArduinoISP > Arduino ISP` auf den Arduino Uno, Leonardo oder Mega laden. Beim WAGO ISP UPDI Programmer muss eventuell der linke Jumper entfernt werden.
-2. Arduino Projekt ([praktikum-gib-mir-mal-ne-wago](TODO...)) öffnen
+2. Arduino Projekt ([praktikum-gib-mir-mal-ne-wago](https://github.com/wago-enterprise-education/praktikum-gib-mir-mal-ne-wago/tree/main/firmware)) öffnen
 3. Mikrocontroller auswählen `Tools > Board: … > ATTinyCore > ATtiny24/44/84(a) (No bootloader)`
 4. Standardeinstellungen können bestehen bleiben (vgl. Abb.)
 5. `Tools > Programmer > Arduino as ISP` auswählen
@@ -115,6 +113,18 @@ Für eine schnelle und unkomplizierte Programmierung wurde im WAGO Ausbildungsbe
 ### Programming Guide
 
 In diesem Kapitel gibt es eine kurze Einführung dazu, wie du **den Programmcode für die Platine ändern** kannst. Grundlagen für das Programmieren in C++ (Arduino) werden dabei vorausgesetzt. Bei YouTube gibt es ansonsten viele einsteigerfreundliche Tutorials dazu, suche einfach nach *Arduino Tutorial* und schon nach kurzer Zeit solltest du in der Lage sein die LEDs nach deinen Vorgaben anzusteuern.
+
+## Inbetriebnahme
+
+Zuletzt musst Du die Batterien in das Batteriepack einlegen. Nutze hierzu einen kleinen Kreuzschraubendreher und öffne das Batteriepack. Achte auf die Richtung der Batterien! Schließe und verschraube das Batteriepack wieder. Die Platine ist nun betriebsbereit.
+
+<img src="images/battery_pack.jpg" width="180px" alt="Batteriepack" style="margin: 10px 0 0 60px"/>
+
+## Lust auf mehr?
+
+Falls Du Lust auf mehr Technik hast, oder WAGO noch besser kennenlernen möchtest, dann mach doch ein Praktikum oder eine Ausbildung bei uns...
+
+Schau doch einfach mal auf unserer [Karriereseite](https://www.wago.com/de/ausbildung-studium) vorbei!
 
 ---
 
