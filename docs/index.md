@@ -25,6 +25,18 @@ Nach dem Bestücken und Einschalten der Platine läuft ein Lauflicht um die Spre
 - Die Platine kann andere Geräte elektromagnetisch beeinträchtigen oder von anderen Geräten beeinträchtigt werden.
 - Betreibe die Platine nicht unbeaufsichtigt.
 
+## Bauteile
+
+Anzahl | Artikel
+-|-
+28 | LED 3mm grün 2mA
+1  | WAGO Picomax Stiftleiste 2091-1702
+1  | WAGO Picomax Stecker 2091-1122
+1  | Batteriehalter
+4  | Widerstand $33\Omega$
+2  | Widerstand $10k\Omega$
+1  | Mikrocontroller ATTiny24A-PU
+
 ## Bauanleitung
 
 Gelötet wird bei THT-Bauteilen (Through Hole Technology, deutsch Durchsteckmontage) immer auf der Nicht-Bestückungsseite. Also muss die Platine nach dem Einsetzen einmal gedreht werden. Damit die Bauteile dabei nicht herausfallen, werden die Komponenten provisorisch fixiert werden. Hierzu steht Dir eine entsprechende Fixierung zur Verfügung, die wir mit dem 3D Drucker vorbereitet haben.
