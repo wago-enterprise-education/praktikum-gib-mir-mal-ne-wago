@@ -1,11 +1,11 @@
 # TODO
 
 - [ ] Github Pages Seite
-  - [ ] Belegung ISP Pins auf Seite aufnehmen
   - [ ] Hinweis Programmierung ohne Batterie
   - [ ] Programmierungspart überarbeiten
   - [ ] Handout erstellen
   - [ ] Bild mit ISP_Programmer tauschen
+  - [x] Belegung ISP Pins auf Seite aufnehmen
   - [x] Hinweis Polarität der LEDs auf der Platine
   - [x] Bild der Lötschablone ergänzen
   - [x] Downloadlink auf ino File in Docs
