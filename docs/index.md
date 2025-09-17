@@ -78,7 +78,7 @@ Stecke den WAGO picoMAX Steckverbinder und die Stiftleiste zusammen. Löte beide
 
 ## Upload des Programmcodes
 
-{:.info}
+{: .note-title .info}
 > Programmcode herunterladen
 >
 > Der Programmcode ist als Arduino `ino` Datei im Github-Repository verfügbar. Am besten Du lädst die `gib_mir_mal_ne_wago.ino` Datei auf Deinen Rechner herunter. (Icon rechts oberhalb des Prohgrammcodes 'Download raw file')
