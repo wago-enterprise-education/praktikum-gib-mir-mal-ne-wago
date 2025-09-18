@@ -15,6 +15,9 @@ Nach dem Bestücken und Einschalten der Platine läuft ein Lauflicht um die Spre
 
 <img src="images/gib-mir-mal-ne-wago-3d.jpg" width="500px" alt="Platine in 3D" />
 
+{: .info}
+Diese Anleitung gibt es auch als [Handout zum ausdrucken]().
+
 ## Sicherheitshinweise
 
 - Bewahre diese Bedienungsanleitung für den späteren Gebrauch sicher auf! Sie enthält wichtige Informationen
@@ -94,6 +97,9 @@ Dafür wird ein zusätzliches Gerät, ein **ISP-Programmer**, benötigt. Es kann
 Für eine schnelle und unkomplizierte Programmierung wurde im WAGO Ausbildungsbereich zusätzlich ein [ISP UPDI Programmer](https://wago-enterprise-education.github.io/isp-updi-programmer/) als Aufsatz für einen Arduino Uno entwickelt. Über lötfreie Steckverbinder kann hiermit der Mikrocontroller auf der Platine programmiert werden.
 
 <img src="images/isp_programmer.jpg" alt="Programmierung über ISP" width="500" style="margin: 0 0 0 60px">
+
+{: .info}
+**ACHTUNG** Bei dieser Platine muss die Programmierung **ohne** Batterien erfolgen!!!
 
 ### Kurzanleitung
 

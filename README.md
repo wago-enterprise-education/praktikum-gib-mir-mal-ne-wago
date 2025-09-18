@@ -17,3 +17,7 @@ Bau einer "Gib mir mal ’ne WAGO" Platine zur Kampagne.
 ## Ansprechpartner
 
 - [Andre Bell](mailto:andre.bell@wago.com)
+
+## Handout
+
+Das Handout ist inhaltlich aus der Datei `docs/index.md` erzeugt, wobei der Header getauscht wurde. Danach wird ein PDF in VS Code mit `Strg+P` -> Markdown Export PDF erzeugt. Das generierte PDF `handout.pdf` muss dann in den Ordner `docs` verschoben werden.
