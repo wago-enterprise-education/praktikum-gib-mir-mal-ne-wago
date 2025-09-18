@@ -108,33 +108,19 @@ Für eine schnelle und unkomplizierte Programmierung wurde im WAGO Ausbildungsbe
 
 <img src="images/arduino_settings.png" alt="Einstellungen in der Arduino IDE" width="450" style="margin: 0 0 0 50px">
 
-### Programming Guide
-
-In diesem Kapitel gibt es eine kurze Einführung dazu, wie du **den Programmcode für die Platine ändern** kannst. Grundlagen für das Programmieren in C++ (Arduino) werden dabei vorausgesetzt. Bei YouTube gibt es ansonsten viele einsteigerfreundliche Tutorials dazu, suche einfach nach *Arduino Tutorial* und schon nach kurzer Zeit solltest du in der Lage sein die LEDs nach deinen Vorgaben anzusteuern.
-
 ## Inbetriebnahme
 
 Zuletzt musst Du die Batterien in das Batteriepack einlegen. Nutze hierzu einen kleinen Kreuzschraubendreher und öffne das Batteriepack. Achte auf die Richtung der Batterien! Schließe und verschraube das Batteriepack wieder. Die Platine ist nun betriebsbereit.
 
 <img src="images/battery_pack.jpg" width="180px" alt="Batteriepack" style="margin: 10px 0 0 60px"/>
 
-## Lust auf mehr?
+## Programming Guide
 
-Falls Du Lust auf mehr Technik hast, oder WAGO noch besser kennenlernen möchtest, dann mach doch ein Praktikum oder eine Ausbildung bei uns...
+In diesem Kapitel gibt es eine kurze Einführung dazu, wie du **den Programmcode für die Platine ändern** kannst. Grundlagen für das Programmieren in C++ (Arduino) werden dabei vorausgesetzt. Bei YouTube gibt es ansonsten viele einsteigerfreundliche Tutorials dazu, suche einfach nach *Arduino Tutorial* und schon nach kurzer Zeit solltest du in der Lage sein die LEDs nach deinen Vorgaben anzusteuern.
 
-Schau doch einfach mal auf unserer [Karriereseite](https://www.wago.com/de/ausbildung-studium) vorbei!
+### Programmcode
 
----
-
-⚠️ TODO: Ab hier noch anpassen...
-
-### Programmcode für Spiel 4
-In der Funktion `playGame4()` kannst du deinen eigenen Code schreiben. Sie wird ausgeführt, wenn LED 4 leuchtet und Taster 4 („Start“) gedrückt wird. Aktuell wird hier nur die Funktion `errorAnimation()` aufgerufen, die kurz alle LEDs viermal aufleuchten lässt. Entferne diese Funktion testweise und ersetzte sie durch `startupAnimation()`. Anschließend erscheint beim Starten des Spiels die Animation, die auch beim Einschalten der Platine angezeigt wird.
-
-### LEDs ansteuern
-Die LEDs können über die Funktion `digitalWrite()` ein- oder ausgeschaltet werden. Die entsprechenden Pins sind in dem Array `leds` hinterlegt.
-
-Um beispielsweise LED 1 leuchten zu lassen, schreibe: `digitalWrite(leds[0], HIGH)`.
+In der Funktion `setup()` werden zunächst die vier Pins, an denen sich die LEDs befinden, als Ausgänge defininert. Die Routine `loop()` wird danach immer wieder ausgeführt. Hier kannst Du sehen, dass der Programmcode im wesentlichen aus vier sehr ähnlichen Blöcken besteht. In einem Block werden alle Ausgänge auf `HIGH` (LEDs sind dann aus) gesetzt. Einer der Ausgänge wird auf `LOW` gesetzt (LEDs sind an). Danach wird mit einem `delay(100)` für $100ms$ also $0,1s$ gewartet.
 
 {:.info}
 Den Schaltplan der Platine, um zu sehen welche Pins des Mikrocontrollers womit verbunden sind, findest du hier: **[Schaltplan Praktikum – Gib mir mal ’ne WAGO ➡️](https://github.com/wago-enterprise-education/praktikum-gib-mir-mal-ne-wago/blob/main/pcb/SCH_praktikum-gib-mir-mal-ne-wago.pdf)**
@@ -142,28 +128,48 @@ Den Schaltplan der Platine, um zu sehen welche Pins des Mikrocontrollers womit v
 ### Basisprogramm
 
 ```C++
-void playGame4() {
-  startupAnimation();
-  updateButtons();
-  delay(50);
+uint8_t leds[] = {PIN_PA3, PIN_PA2, PIN_PA1, PIN_PA0};
 
-  while(!buttons[RESET].pressed()) { // Das Ausrufezeichen negiert den darauffolgenden Ausdruck
-    updateButtons();
-    
-    if(buttons[0].isPressed()) digitalWrite(leds[0], HIGH);
-    else digitalWrite(leds[0], LOW);
-
-    if(buttons[2].isPressed()) digitalWrite(leds[2], HIGH);
-    else digitalWrite(leds[2], LOW);
-
-    if(buttons[3].isPressed()) digitalWrite(leds[3], HIGH);
-    else digitalWrite(leds[3], LOW);
+void setup() {
+  // Set pins D0-D3 as outputs
+  for (int pin = 0; pin <= 3; pin++) {
+    pinMode(leds[pin], OUTPUT);
   }
-  errorAnimation();
-  delay(250);
-  startupAnimation();
 }
 
+void loop() {
+  // Muster 1: 0b00000111 -> D0, D1, D2 HIGH, D3 LOW
+  digitalWrite(0, HIGH);
+  digitalWrite(1, HIGH);
+  digitalWrite(2, HIGH);
+  digitalWrite(3, LOW);
+  delay(100);
+
+  // Muster 2: 0b00001011 -> D0, D1, D3 HIGH, D2 LOW
+  digitalWrite(0, HIGH);
+  digitalWrite(1, HIGH);
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  delay(100);
+
+  // Muster 3: 0b00001101 -> D0, D2, D3 HIGH, D1 LOW
+  digitalWrite(0, HIGH);
+  digitalWrite(1, LOW);
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  delay(100);
+
+  // Muster 4: 0b00001110 -> D1, D2, D3 HIGH, D0 LOW
+  digitalWrite(0, LOW);
+  digitalWrite(1, HIGH);
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  delay(100);
+}
 ```
 
-Analysiere den Code und versuche herauszufinden, was die Funktion macht. **Lade anschließend das angepasste Projekt hoch** und überprüfe deine Ergebnisse.
+## Lust auf mehr?
+
+Falls Du Lust auf mehr Technik hast, oder WAGO noch besser kennenlernen möchtest, dann mach doch ein Praktikum oder eine Ausbildung bei uns...
+
+Schau doch einfach mal auf unserer [Karriereseite](https://www.wago.com/de/ausbildung-studium) vorbei!
