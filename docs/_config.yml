@@ -1,9 +1,12 @@
-title: Praktikum – Gib mir mal `ne WAGO
-description: Dokumentation für das Praktikumsmodul Gib mir mal `ne WAGO
+title: Praktikum – Gib mir mal ’ne WAGO
+description: Dokumentation für das Praktikumsmodul Gib mir mal ’ne WAGO
 author: Andre Bell - WAGO GmbH & Co. KG
 url: https://wago-enterprise-education.github.io/praktikum-gib-mir-mal-ne-wago/
 lang: de
 remote_theme: wago-enterprise-education/wago-github-pages-theme
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
 plugins:
 - jemoji
 - jekyll-redirect-from
