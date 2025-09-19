@@ -41,8 +41,8 @@ Anzahl | Artikel
 1  | WAGO Picomax Stiftleiste 2091-1702
 1  | WAGO Picomax Stecker 2091-1122
 1  | Batteriehalter
-4  | Widerstand $33\Omega$
-2  | Widerstand $10k\Omega$
+4  | Widerstand $$33\Omega$$
+2  | Widerstand $$10k\Omega$$
 1  | Mikrocontroller ATTiny24A-PU
 
 <a id="bauanleitung"></a>
@@ -60,7 +60,7 @@ Anschließend können mit einem Seitenschneider die überstehenden Drähte abgek
 
 ### Schritt 1
 
-Als erstes werden die Widerstände $R_1-R_6$ bestückt. Dazu solltest Du die Drähte sehr nah am Widerstand abbiegen und dann durch die Bohrungen an den gekennzeichneten Stellen in die Platine stecken. Achte darauf die richtigen Widerstände zu verwenden! ($R_1-R_4$ sind $33\Omega$ Widerstände mit den Farben orange-orange-scharz-gold und $R_5-R_6$ sind $10\text{k}\Omega$ Widerstände mit den Farben braun-schwarz-schwarz-rot). Biege die Anschlussdrähte auf der Rückseite leicht zur Seite. Anschließend lötest Du die einzelnen Anschlussdrähte der Widerstände auf der Rückseite der Platine fest. Kürze die Bauteildrähte mit einem Seitenschneider vorsichtig oberhalb der Lötverbindung. Kürze immer nur einen Bauteildraht auf einmal!
+Als erstes werden die Widerstände $$R_1-R_6$$ bestückt. Dazu solltest Du die Drähte sehr nah am Widerstand abbiegen und dann durch die Bohrungen an den gekennzeichneten Stellen in die Platine stecken. Achte darauf die richtigen Widerstände zu verwenden! ($$R_1-R_4$$ sind $$33\Omega$$ Widerstände mit den Farben orange-orange-scharz-gold und $$R_5-R_6$$ sind $$10\text{k}\Omega$$ Widerstände mit den Farben braun-schwarz-schwarz-rot). Biege die Anschlussdrähte auf der Rückseite leicht zur Seite. Anschließend lötest Du die einzelnen Anschlussdrähte der Widerstände auf der Rückseite der Platine fest. Kürze die Bauteildrähte mit einem Seitenschneider vorsichtig oberhalb der Lötverbindung. Kürze immer nur einen Bauteildraht auf einmal!
 
 <img src="images/resistor.jpg" width="250px" alt="Widerstand" />
 
@@ -135,7 +135,7 @@ In diesem Kapitel gibt es eine kurze Einführung dazu, wie du **den Programmcode
 
 ### Programmcode
 
-In der Funktion `setup()` werden zunächst die vier Pins, an denen sich die LEDs befinden, als Ausgänge defininert. Die Routine `loop()` wird danach immer wieder ausgeführt. Hier kannst Du sehen, dass der Programmcode im wesentlichen aus vier sehr ähnlichen Blöcken besteht. In einem Block werden alle Ausgänge auf `HIGH` (LEDs sind dann aus) gesetzt. Einer der Ausgänge wird auf `LOW` gesetzt (LEDs sind an). Danach wird mit einem `delay(100)` für $100ms$ also $0,1s$ gewartet.
+In der Funktion `setup()` werden zunächst die vier Pins, an denen sich die LEDs befinden, als Ausgänge defininert. Die Routine `loop()` wird danach immer wieder ausgeführt. Hier kannst Du sehen, dass der Programmcode im wesentlichen aus vier sehr ähnlichen Blöcken besteht. In einem Block werden alle Ausgänge auf `HIGH` (LEDs sind dann aus) gesetzt. Einer der Ausgänge wird auf `LOW` gesetzt (LEDs sind an). Danach wird mit einem `delay(100)` für $$100ms$$ also $$0,1s$$ gewartet.
 
 {:.info}
 Den Schaltplan der Platine, um zu sehen welche Pins des Mikrocontrollers womit verbunden sind, findest du hier: **[Schaltplan Praktikum – Gib mir mal ’ne WAGO ➡️](https://github.com/wago-enterprise-education/praktikum-gib-mir-mal-ne-wago/blob/main/pcb/SCH_praktikum-gib-mir-mal-ne-wago.pdf)**
