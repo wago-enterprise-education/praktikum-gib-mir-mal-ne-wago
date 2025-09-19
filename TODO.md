@@ -2,6 +2,7 @@
 
 - [ ] Github Pages Seite
   - [ ] Bild mit ISP_Programmer tauschen
+  - [ ] Callouts sind im PDF kaputt
   - [x] Handout erstellen
   - [x] Hinweis Programmierung ohne Batterie
   - [x] Programmierungspart überarbeiten

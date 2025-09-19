@@ -189,3 +189,5 @@ void loop() {
 Falls Du Lust auf mehr Technik hast, oder WAGO noch besser kennenlernen möchtest, dann mach doch ein Praktikum oder eine Ausbildung bei uns...
 
 Schau doch einfach mal auf unserer [Karriereseite](https://www.wago.com/de/ausbildung-studium) vorbei!
+
+<img src="images/ausbildung-bei-wago.png" width="300" alt="Lust auf mehr - QR Code" />

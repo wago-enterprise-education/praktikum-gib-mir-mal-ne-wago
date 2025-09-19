@@ -20,6 +20,9 @@ Aktualisierung aufzufordern.
 - Redfit Adapter für die Programmierung auf Platine aufgenommen (Analog zum [Praktikum - Lichtfolge](https://github.com/wago-enterprise-education/praktikum-lichtfolge))
 - Github Pages Seiten für Anleitung aufgesetzt
 - Anleitung analog zum Praktikum Lichtfolge aufgebaut
+- Handout als PDF
+- ISP Header Pinout in Dokumentation
+- Arduino basierte Firmware
 
 ### Changed
 
