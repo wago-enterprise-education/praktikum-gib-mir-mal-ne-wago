@@ -1,0 +1,17 @@
+[project]
+name = "gmmnw"
+version = "0.1.0"
+description = "Small helper tools to update some files"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "markdown-pdf>=1.9",
+    "typer>=0.17.4",
+]
+
+[project.scripts]
+update-handout = "gmmnw:app"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"

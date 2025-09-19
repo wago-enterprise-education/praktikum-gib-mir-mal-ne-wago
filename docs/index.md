@@ -7,17 +7,21 @@ lang: de
 ## Inhalt
 
 1. [Sicherheitshinweise](#sicherheitshinweise)
-2. [Bauanleitung](#bauanleitung)
-3. [Upload des Programmcodes](#upload-des-programmcodes)
-4. [Programming Guide](#programming-guide)
+1. [Bauteile](#bauteile)
+1. [Bauanleitung](#bauanleitung)
+1. [Upload des Programmcodes](#upload-des-programmcodes)
+1. [Inbetriebnahme](#inbetriebnahme)
+1. [Programming Guide](#programming-guide)
+1. [Lust auf mehr?](#lust-auf-mehr)
 
-Nach dem Bestücken und Einschalten der Platine läuft ein Lauflicht um die Sprechblase. Hör Dir doch gleich mal den Song 🎶 dazu an, den Du über den QR Code auf der Platine findest... 🙂
+Nach dem Bestücken und Einschalten der Platine läuft ein Lauflicht um die Sprechblase. Hör Dir doch gleich mal den Song 🎶 dazu an, den Du über den QR Code auf der Platine findest... &#x1F600;
 
 <img src="images/gib-mir-mal-ne-wago-3d.jpg" width="500px" alt="Platine in 3D" />
 
 {: .info}
 Diese Anleitung gibt es auch als [Handout zum ausdrucken]().
 
+<a id="sicherheitshinweise"></a>
 ## Sicherheitshinweise
 
 - Bewahre diese Bedienungsanleitung für den späteren Gebrauch sicher auf! Sie enthält wichtige Informationen
@@ -28,6 +32,7 @@ Diese Anleitung gibt es auch als [Handout zum ausdrucken]().
 - Die Platine kann andere Geräte elektromagnetisch beeinträchtigen oder von anderen Geräten beeinträchtigt werden.
 - Betreibe die Platine nicht unbeaufsichtigt.
 
+<a id="bauteile"></a>
 ## Bauteile
 
 Anzahl | Artikel
@@ -40,6 +45,7 @@ Anzahl | Artikel
 2  | Widerstand $10k\Omega$
 1  | Mikrocontroller ATTiny24A-PU
 
+<a id="bauanleitung"></a>
 ## Bauanleitung
 
 Gelötet wird bei THT-Bauteilen (Through Hole Technology, deutsch Durchsteckmontage) immer auf der Nicht-Bestückungsseite. Also muss die Platine nach dem Einsetzen einmal gedreht werden. Damit die Bauteile dabei nicht herausfallen, werden die Komponenten provisorisch fixiert werden. Hierzu steht Dir eine entsprechende Fixierung zur Verfügung, die wir mit dem 3D Drucker vorbereitet haben.
@@ -79,6 +85,7 @@ Stecke den WAGO picoMAX Steckverbinder und die Stiftleiste zusammen. Löte beide
 
 <img src="images/picomax.jpg" width="150px" alt="WAGO Picomax Steckverbinder" style="margin: 0 0 0 40px"/>
 
+<a id="upload-des-programmcodes"></a>
 ## Upload des Programmcodes
 
 {: .info}
@@ -114,12 +121,14 @@ Für eine schnelle und unkomplizierte Programmierung wurde im WAGO Ausbildungsbe
 
 <img src="images/arduino_settings.png" alt="Einstellungen in der Arduino IDE" width="450" style="margin: 0 0 0 50px">
 
+<a id="inbetriebnahme"></a>
 ## Inbetriebnahme
 
 Zuletzt musst Du die Batterien in das Batteriepack einlegen. Nutze hierzu einen kleinen Kreuzschraubendreher und öffne das Batteriepack. Achte auf die Richtung der Batterien! Schließe und verschraube das Batteriepack wieder. Die Platine ist nun betriebsbereit.
 
 <img src="images/battery_pack.jpg" width="180px" alt="Batteriepack" style="margin: 10px 0 0 60px"/>
 
+<a id="programming-guide"></a>
 ## Programming Guide
 
 In diesem Kapitel gibt es eine kurze Einführung dazu, wie du **den Programmcode für die Platine ändern** kannst. Grundlagen für das Programmieren in C++ (Arduino) werden dabei vorausgesetzt. Bei YouTube gibt es ansonsten viele einsteigerfreundliche Tutorials dazu, suche einfach nach *Arduino Tutorial* und schon nach kurzer Zeit solltest du in der Lage sein die LEDs nach deinen Vorgaben anzusteuern.
@@ -174,6 +183,7 @@ void loop() {
 }
 ```
 
+<a id="lust-auf-mehr"></a>
 ## Lust auf mehr?
 
 Falls Du Lust auf mehr Technik hast, oder WAGO noch besser kennenlernen möchtest, dann mach doch ein Praktikum oder eine Ausbildung bei uns...
